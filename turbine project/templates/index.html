@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+
+
+  <meta charset="UTF-8">
+
+  <title>POWER</title>
+  <link rel="stylesheet" type="text/css" href="../static/my.css">
+ 
+  
+</head>
+
+<body>
+	<center>
+   
+ <div class="login" >
+	<h1>Power Output Predictor</h1>
+  <div class="image">
+	<div class="formade">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+
+
+    <br>
+    <form  action="{{ url_for('predict')}}"method="POST">
+    	<input   type="text" name="Date" placeholder="yyyy-mm-dd" required="required" />
+      <br>
+      <br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Mean Active Power</button>
+    </form>
+
+    <br>
+   <br>
+   <br>
+   <div >
+                    {{prediction_text}}
+                    <br>
+                    <br>
+                    
+       <br>
+       <form action="{{ url_for('display')}}" method= "POST">
+           <button type="submit">show me the graph</button>
+       </form>
+   </div>
+</div>
+   <br>
+   <br>
+
+
+</div>
+ 
+
+ </div>
+</center>
+
+</body>
+</html>

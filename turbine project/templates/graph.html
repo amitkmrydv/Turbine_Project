@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<meta charset="UTF-8">
+
+  <title>POWER</title>
+
+  <link rel="stylesheet" type="text/css" href="../static/my.css">
+ 
+  
+</head>
+
+<body>
+	<center>
+      <div class="image">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        please click the reload button to see the latest graph
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit"  onClick="refreshPage()">show me graph</button>
+    <script>
+        function refreshPage(){
+            window.location.reload();
+        } 
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+       <img src="{{graph_image}}" width="1800" height="400">
+   <form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input type="button" value="No, really, go back!" onclick="history.go(-1)">
+</form>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+
+ </div>
+</center>
+
+</body>
+</html>
